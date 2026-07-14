@@ -72,7 +72,7 @@
 #include "touch_pad.h"
 #include "trainer_info.h"
 #include "unk_020298BC.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_02094EDC.h"
 #include "unk_02095AF0.h"
 #include "yes_no_touch_menu.h"

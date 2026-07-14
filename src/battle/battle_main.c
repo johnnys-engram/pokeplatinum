@@ -82,7 +82,7 @@
 #include "unk_0202419C.h"
 #include "unk_0202F1D4.h"
 #include "unk_02033200.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_02038F8C.h"
 #include "unk_0207A6DC.h"
 #include "unk_0208C098.h"

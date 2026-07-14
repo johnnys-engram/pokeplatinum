@@ -38,7 +38,7 @@
 #include "sprite.h"
 #include "system.h"
 #include "tv_segment.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_0203909C.h"
 #include "vram_transfer.h"
 #include "wifi_list.h"

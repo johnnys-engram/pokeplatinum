@@ -49,7 +49,7 @@
 #include "text.h"
 #include "trainer_info.h"
 #include "unk_02033200.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 
 #include "res/graphics/main_menu/main_menu_graphics.naix"
 #include "res/text/bank/mystery_gift_menu.h"

@@ -13,7 +13,7 @@
 #include "communication_information.h"
 #include "communication_system.h"
 #include "heap.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 
 typedef struct {
     const CommCmdTable *cmdTable;
@@ -45,11 +45,11 @@ static const CommCmdTable Unk_020E5D64[] = {
     { sub_02032958, CommPacketSizeOf_Nothing, NULL },
     { sub_0203299C, CommPacketSizeOf_Nothing, NULL },
     { sub_020329C4, CommPacketSizeOf_Nothing, NULL },
-    { CommCmd_16, CommPacketSizeOf_NetId, NULL },
-    { CommCmd_17, CommPacketSizeOf_NetId, NULL },
-    { CommCmd_18, sub_02032954, NULL },
-    { sub_02036574, sub_02036590, NULL },
-    { sub_02036670, CommTool_TempDataSize, NULL },
+    { CommTool_CmdSyncRequest, CommPacketSizeOf_NetId, NULL },
+    { CommTool_CmdSyncComplete, CommPacketSizeOf_NetId, NULL },
+    { CommTool_CmdSyncAck, sub_02032954, NULL },
+    { CommList_Recv, CommList_Size, NULL },
+    { CommTool_CmdRecvTempData, CommTool_TempDataSize, NULL },
     { CommManager_DisconnectWifi, CommPacketSizeOf_Nothing, NULL }
 };
 

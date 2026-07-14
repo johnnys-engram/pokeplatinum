@@ -28,7 +28,7 @@
 #include "script_manager.h"
 #include "underground.h"
 #include "unk_0202D778.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_02038FFC.h"
 #include "unk_0203D1B8.h"
 #include "unk_0204AEE8.h"
@@ -282,7 +282,7 @@ static BOOL sub_0206BD1C(FieldTask *param0)
     FieldSystem *fieldSystem = FieldTask_GetFieldSystem(param0);
     UnkStruct_0206BD88 *v3 = FieldTask_GetEnv(param0);
 
-    const void *v1 = sub_0203664C(1 - CommSys_CurNetId());
+    const void *v1 = CommTool_GetReceivedTempData(1 - CommSys_CurNetId());
 
     if (v1 == NULL) {
         return 0;

@@ -41,7 +41,7 @@
 #include "trainer_case.h"
 #include "trainer_info.h"
 #include "unk_0202D778.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_0203D1B8.h"
 #include "unk_020655F4.h"
 
@@ -240,7 +240,7 @@ static BOOL sub_0205A2FC(void)
     int v1 = CommSys_ConnectedCount();
 
     for (i = 0; i < v1; i++) {
-        if (CommTool_GetSyncNo(i) == 94) {
+        if (CommTiming_GetSyncNumber(i) == 94) {
             return 1;
         }
     }

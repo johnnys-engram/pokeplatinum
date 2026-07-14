@@ -31,7 +31,7 @@
 #include "trainer_info.h"
 #include "underground.h"
 #include "unk_02033200.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_0205A0D8.h"
 #include "unk_02099500.h"
 
@@ -497,7 +497,7 @@ static void FieldCommManager_CheckExitRoom(void)
 
     for (netId = 0; netId < CommSys_ConnectedCount(); netId++) {
         if (netId != CommSys_CurNetId()) {
-            if (CommTool_GetSyncNo(netId) == SYNC_94) {
+            if (CommTiming_GetSyncNumber(netId) == SYNC_94) {
                 if (sFieldCommMan->fieldSystem->task == NULL) {
                     for (j = 0; j < 4; j++) {
                         if (sFieldCommMan->trainerCase[j]) {

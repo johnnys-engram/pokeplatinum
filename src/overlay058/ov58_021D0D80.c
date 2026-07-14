@@ -45,7 +45,7 @@
 #include "touch_screen.h"
 #include "trainer_info.h"
 #include "unk_02033200.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_0205B33C.h"
 #include "unk_0205C22C.h"
 #include "unk_02095E98.h"

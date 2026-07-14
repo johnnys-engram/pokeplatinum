@@ -24,7 +24,7 @@
 #include "unk_0203266C.h"
 #include "unk_02032798.h"
 #include "unk_02033200.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "wireless_manager.h"
 
 enum TransmissionType {
@@ -547,7 +547,7 @@ BOOL CommSys_Update(void)
     }
 
     CommManager_DisplayError(0);
-    sub_0203650C();
+    CommTool_SendQueuedSync();
 
     return TRUE;
 }
