@@ -53,7 +53,7 @@
 #include "unk_02012744.h"
 #include "unk_0202419C.h"
 #include "unk_0202F1D4.h"
-#include "unk_020363E8.h"
+#include "comm_tool.h"
 #include "unk_0208C098.h"
 #include "vram_transfer.h"
 
