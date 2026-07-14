@@ -297,7 +297,7 @@ static void FieldCommTask_StartBattleServer(void)
         return;
     }
 
-    ov7_0224B4B8();
+    CommClub_BeginHostAwait();
 
     CommInfo_SendPlayerInfo();
     FieldCommManager_SetTask(FieldCommTask_WaitBattleServer, 0);
